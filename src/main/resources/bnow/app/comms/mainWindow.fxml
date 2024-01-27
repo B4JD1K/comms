@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bnow.app.comms.AppController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <BorderPane BorderPane.alignment="CENTER">
+               <left>
+                  <VBox prefHeight="600.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField prefHeight="30.0" promptText="Szukaj konwersacji...">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <ScrollPane prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox prefWidth="161.0" />
+                           </content>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ScrollPane>
+                        <HBox alignment="CENTER_LEFT" maxHeight="30.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="30.0" text="Logged">
+                                       <graphic>
+                                          <Circle fill="#1f93ff" radius="10.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="2.0" translateX="-5.0" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" spacing="3.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="1" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="2" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="3" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </VBox>
+               </left>
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <HBox alignment="CENTER" BorderPane.alignment="CENTER_LEFT">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" spacing="3.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" ellipsisString="" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="30.0" text="Reciever" HBox.hgrow="ALWAYS">
+                                       <graphic>
+                                          <Circle fill="#1f93ff" radius="10.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="2.0" translateX="-5.0" />
+                                       </graphic>
+                                    </Button>
+                                    <Separator orientation="VERTICAL" prefHeight="30.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <Label text="AKA" />
+                                    <Label text="AKA" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="30.0" spacing="5.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="C" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="K" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="/" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="+" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="P" />
+                                    <TextField maxWidth="100.0" prefHeight="25.0" promptText="Wyszukaj..." />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="S" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="iconBtn" text="?" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </BorderPane.margin>
+                        </HBox>
+                     </top>
+                     <center>
+                        <BorderPane BorderPane.alignment="CENTER">
+                           <center>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" />
+                           </center>
+                           <bottom>
+                              <TextField prefHeight="30.0" promptText="Napisz wiadomość..." BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </BorderPane.margin>
+                              </TextField>
+                           </bottom>
+                        </BorderPane>
+                     </center>
+                     <right>
+                        <ScrollPane hbarPolicy="NEVER" BorderPane.alignment="CENTER">
+                           <content>
+                              <AnchorPane prefWidth="170.0" />
+                           </content>
+                        </ScrollPane>
+                     </right>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </center>
+         <left>
+            <ScrollPane hbarPolicy="NEVER" prefWidth="50.0" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox alignment="TOP_CENTER" fillWidth="false" prefWidth="40.0" spacing="5.0">
+                     <children>
+                        <Button maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="logo" text="L">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="servers" text="S" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="servers" text="S" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="servers" text="S" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="servers" text="S" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="servers" text="S" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="servers" text="S" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="servers" text="S" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </left>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@globalStyles.css" />
+   </stylesheets>
+</AnchorPane>
